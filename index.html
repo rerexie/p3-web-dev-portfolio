@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <img src="./images/image3.png" alt="rexie's logo" class="rexie-logo">
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Rexie
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>  
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./images/imagefinale.png" alt="Rex's profile picture"> 
+        </div> 
+        <div class="section__text">
+            <h1 class="title">John Rexie Bautista</h1>
+            <p class="section__text__p2">Web Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./images/cv.pdf')">Download CV</button>
+            </div>
+            <div class="socials-container">
+                <img src="./images/github.png" alt="Github link" class="icon" onclick="location.href='https://github.com/rerexie'">
+                <img src="./images/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/john-rexie-bautista-738804203/'">
+                <img src="./images/fb.png" alt="My facebook profile" class="icon" onclick="location.href='https://www.facebook.com/johnrexie.bautista.3/'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h3>Experience</h3>
+                        <ul class="experience_list">
+                            <li>Equiment/Facilities Engineer (March 2019 - December 2020)</li>
+                        </ul>
+                        <ul class="experience_list">
+                            <li>Technical Support Engineer (March 2021 - Present)</li>
+                        </ul>      
+                    </div>
+                    <div class="details-container">
+                        <h3>Education</h3>
+                        <p class="t-container">B.S. Mechanical Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p class="t-container">I'm a Mechanical Engineer with more than 5 years of experience in equipment and technical support engineering.I would like to pursue a career in tech because I feel inspired and excited when I'm seeing a bunch of programming codes.Also , I'm not noticing that time is passing when I'm coding.I told myself that someday , I will be a successful Full Stack Developer.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./images/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+    </section>
+    <section id="experience">
+        <h1 class="title">Experiences</h1>
+        <div class="experience-details-container">
+            <div class="experience-container">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./images/image3.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/image3.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <P>Basic</P>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Mechanical Engineering</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./images/image3.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Machine Troubleshooting</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/image3.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Machine Improvement</h3>
+                                <P>Experienced</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/image3.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Machine Maintenance Planning</h3>
+                                <P>Experienced</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/image3.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Technical Support</h3>
+                                <P>Experienced</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/image3.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Report generation and Analysis</h3>
+                                <P>Experienced</P>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./images/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+    </section>
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./images/project1.jpg" alt="Project 1" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Project 1:IronMike</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rerexie'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rerexie'">
+                        Demo
+                    </button>
+                </div>
+                </div>
+                <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./images/project2.jpg" alt="Project 2" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Project 2:PACMAN</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rerexie'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rerexie'">
+                        Demo
+                    </button>
+                </div>
+                </div>
+                <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./images/project3.jpg" alt="Project 3" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Project 3:ALI</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rerexie'">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/rerexie'">
+                        Demo
+                    </button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <img src="./images/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
+    </section>
+    <section id="contact">
+            <h1 class="title">Contact Me</h1>
+            <div class="forms">
+                <form action="https://mail.google.com">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="" placeholder="Your message..">
+                        
+                    <label for="country" >Country</label>
+                    <select id="country" name="country">
+                        <option value=""></option>
+                        <option value="australia">Australia</option>
+                        <option value="philippines">Philippines</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <input type="Submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; Made By John Rexie Bautista</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
